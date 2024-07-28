@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+}
+
+* {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.box {
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.todo img {
+    width: 50px;
+    margin-left: 20px;
+    outline: none;
+}
+
+.todo {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(202, 216, 228);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.inp {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: medium;
+    padding-left: 30px;
+    outline: none;
+}
+
+.btn {
+    width: 180px;
+    font-size: medium;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(221, 137, 107);
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding: 1px 8px 12px 50px;
+    font-size: 17px;
+}
+ul li::before {
+    content: '';
+    background-image: url('To-Do-Img/images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: 10px;
+}
+
+.check{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.check::before {
+    content: '';
+    background-image: url('To-Do-Img/images/checked.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: 10px;
+}
+.Task li span{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    color: #555;
+    top: 5px;
+    right: 0; 
+    border-radius: 50%;
+    line-height: 22px;
+}
+.Task li span:hover{
+    background-color: rgb(141, 164, 184);
+    color: white;
+}
+
